@@ -1,12 +1,18 @@
-import React from 'react'
-import HomePosts from '../components/HomePosts'
+import React from "react";
+import HomePosts from "../components/HomePosts";
+import Navbar from "../components/Navbar";
 const Home = () => {
   return (
-    <div className='px-8 md:px-[200px]'><HomePosts/>
-    <HomePosts/>
-    <HomePosts/>
-    <HomePosts/></div>
-  )
-}
+    <>
+      <Navbar />
+      <div className="px-8 md:px-[200px]">
+        <HomePosts />
+        <HomePosts />
+        <HomePosts />
+        <HomePosts />
+      </div>
+    </>
+  );
+};
 
-export default Home
+export default Home;
